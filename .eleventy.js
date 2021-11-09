@@ -81,7 +81,6 @@ const githubLink = require('./src/site/_filters/github-link');
 const gitlocalizeLink = require('./src/site/_filters/gitlocalize-link');
 const htmlDateString = require('./src/site/_filters/html-date-string');
 const isNewContent = require('./src/site/_filters/is-new-content');
-const {livePosts} = require('./src/site/_filters/live-posts');
 const {livePages} = require('./src/site/_filters/live-pages');
 const md = require('./src/site/_filters/md');
 const {md5} = require('./src/site/_filters/md5');
@@ -190,7 +189,6 @@ module.exports = function (config) {
   config.addFilter('imgix', generateImgixSrc);
   config.addFilter('isNewContent', isNewContent);
   config.addFilter('livePages', livePages);
-  config.addFilter('livePosts', livePosts);
   config.addFilter('md', md);
   config.addFilter('md5', md5);
   config.addFilter('navigation', navigation);

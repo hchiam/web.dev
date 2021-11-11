@@ -83,7 +83,7 @@ declare global {
       /**
        * Tells Algolia not index this page.
        */
-      disable_algolia?: boolean;
+      disable_algolia?: boolean|string;
       /**
        * Hero image of page.
        */

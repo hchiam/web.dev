@@ -1,5 +1,7 @@
 ---
 layout: default-next
+eleventyComputed:
+  disable_algolia: "{{ paged.index > 0 }}"
 ---
 <div class="landing-page">
  {% include 'partials/subscribe-action-next.njk' %}

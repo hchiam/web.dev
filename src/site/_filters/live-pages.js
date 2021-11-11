@@ -30,7 +30,10 @@ function livePages(posts) {
       livePosts(post) &&
       post.url &&
       post.data.title &&
-      !post.data.disable_algolia &&
+      !(
+        post.data.disable_algolia === true ||
+        post.data.disable_algolia === 'true'
+      ) &&
       !post.data.noindex,
   );
 }
